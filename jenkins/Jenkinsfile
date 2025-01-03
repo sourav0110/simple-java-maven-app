@@ -22,5 +22,10 @@ pipeline {
                 bat 'sh ./jenkins/scripts/deliver.sh'
             }
         }
+          stage('Completed') {
+            steps {
+                bat 'echo "Completed job!" '
+            }
+        }
     }
 }
